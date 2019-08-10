@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AppDinner</title>
+    <link href="./assets/css/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!--header section here-->
+    <header class="header">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-custom full-width">
+                        <div class="logo-wrapper d-inline-block">
+                            <a href="#" class="font-weight-bold text-uppercase">Fun Weather</a>
+                            <div class="toggle-icon display-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="right-wrapper">
+                            <div class="navigation">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="active">Home</a>
+                                    </li>
+                                    <li >
+                                        <a class="has-submenu" href="#">About</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Our policy</a></li>
+                                            <li><a href="#">Our Team</a></li>
+                                            <li><a href="#">Carrer</a></li>
+                                            <li><a href="#">Why Us</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="active">Offers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="active">Signup</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="active">Login</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="active">Help</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>  
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="form-area">
+            <div class="container container-form">
+                <div class="row">
+                    <div id="registerForm" class="register-form center-form">
+                        <form id="resgisterForm" method="post"  autocomplete="on" action=""> 
+                            <h1 class="text-center"> Sign up </h1> 
+                            <div class="row">
+                                <div class="col-6 col-xs-12"> 
+                                    <input id="reg_firstName" name="firstName" class="input" type="text" placeholder="Your first name" />
+                                    <span class="error">This field is required</span>
+                                </div>
+                                <div class="col-6 col-xs-12"> 
+                                    <input id="reg_lastName" name="lastName" class="input" type="text" placeholder="Your last name"/>
+                                    <span class="error">This field is required</span> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12"> 
+                                    <input id="reg_yourEmail" name="yourEmail" class="input" type="email" placeholder="Your email"/>
+                                    <span class="error">This field is required</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12"> 
+                                    <textarea rows="4" cols="50" class="textarea" id="reg_perAddress" name="perAddress" placeholder="Your permanent address"></textarea>
+                                    <span class="error">This field is required</span>
+                                    <textarea rows="4" cols="50" class="textarea" id="reg_tempAddress" name="tempAddress" placeholder="Your temorary address"></textarea>
+                                    
+                                    <a href="#" class="show-temp-address">Temproray Addrees</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-digit">
+                                    <input id="reg_firstDigit" class="input" name="firstDigit" maxlength="1"  type="text"/>
+                                    <span class="error">Required</span>
+                                </div>
+                                <div class="col-digit">
+                                    <input id="reg_secondDigit" class="input" name="secondDigit" maxlength="1"  type="text"/>
+                                    <span class="error">Required</span>
+                                </div>
+                                <div class="col-digit">
+                                    <input id="reg_thirdDigit" class="input" name="thirdDigit" maxlength="1" type="text"/>
+                                    <span class="error">Required</span>
+                                </div>
+                                <div class="col-digit">
+                                    <input id="reg_fourthDigit" class="input" name="fourthDigit" maxlength="1" type="text"/>
+                                    <span class="error">Required</span>
+                                </div>
+                            </div>
+                                <div class="signin form-buttons text-center"> 
+                                    <input type="submit" id="signUp" value="Sign up"/> 
+                                    <input type="reset" id="signReset" value="Reset"/> 
+                                </div>
+                                <div class="change_link text-center">  
+                                    Already a member ?
+                                    <a href="#loginForm" class="to_register"> Go and log in </a>
+                                </div>
+                        </form>
+                    </div>
+                    <div id="loginForm" class="login-form center-form">
+                            <form id="login_form"   method="post"  autocomplete="on" action=""> 
+                                <h1 class="text-center"> Log in </h1> 
+                                <div class="row email-row"> 
+                                    <div class="col-12">
+                                        <input id="login_email" name="email" class="input" type="email" placeholder="Enter email" />
+                                        <span class="error">This field is required</span>
+                                        <div class="btn-login-wrapper text-right">
+                                            <a href="#" class="btn-primary btn-next" id="next_function">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row password-row"> 
+                                    <div class="col-12">
+                                        <input id="passwrd" name="passwrd" class="input" type="password" placeholder="Enter password"/> 
+                                        <span class="error">This field is required</span>
+                                    </div>
+                                </div>
+                               
+                                
+                                    <div class="login form-buttons text-center"> 
+                                        <input type="submit" value="Login"/> 
+                                        
+                                    </div>
+                                    <div class="change_link text-center">  
+                                            Not a member yet ?
+                                        <a href="#registerForm" class="join-us"> Join us </a>
+                                    </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </section>
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
